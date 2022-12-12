@@ -14,8 +14,8 @@ class Navbar extends Component {
     render() {
         return (
             <nav>
-                <img alt ="img" src="https://img.icons8.com/windows/128/null/game-of-thrones.png" />
-                <img alt="image" className="titulo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Game_of_Thrones_2011_logo.svg/2560px-Game_of_Thrones_2011_logo.svg.png" />
+                <img alt ="logo game of thrones" src="https://img.icons8.com/windows/128/null/game-of-thrones.png" />
+                <img alt="logo grande game of trones" className="titulo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Game_of_Thrones_2011_logo.svg/2560px-Game_of_Thrones_2011_logo.svg.png" />
                 <ul>
                     <li className="list btn-navbar">
                         <Link to='/'>

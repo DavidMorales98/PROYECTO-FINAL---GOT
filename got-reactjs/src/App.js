@@ -9,7 +9,7 @@ import SerieTV from './view/Serietv';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL} >
         <Navbar />
         <Routes>
           <Route path="/" element={<Inicio/>}/>
