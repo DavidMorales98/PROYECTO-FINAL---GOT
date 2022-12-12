@@ -1,0 +1,567 @@
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+
+:root {
+    --color1: #3d5972;
+    --color2: #102e45;
+    --color3: #546e89;
+    --color4: #6a839f;
+    --color-text1: #333;
+    --color-text2: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Game of Thrones';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.index {
+    background-color: #C6C6C6;
+    height: 100vh;
+    background-image: url(./img/587189.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav {
+    text-decoration: none;
+    list-style: none;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C6C6C6;
+}
+
+nav img {
+    height: 100px;
+    width: auto;
+    margin-left: 20px;
+}
+nav .titulo{
+    height: 70px;
+    margin-left: -300px;
+}
+
+nav ul {
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 30px;
+    margin: 0 5px;
+
+    color: var(--color-text1);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background-color: var(--color-text2);
+    border: 1px solid var(--color-text1);
+
+}
+
+nav ul li a {
+    color: var(--color-text1);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+nav ul li.active,
+nav ul li:hover {
+    background-color: var(--color1);
+    color: var(--color-text2);
+    transition: .5s;
+
+}
+
+nav ul li.active a,
+li:hover a {
+    color: var(--color-text2);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.index section {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 20px 10px;
+    position: relative;
+
+}
+
+.index section .contenedor-texto {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.index section h1 {
+    margin-top: 20%;
+    font-weight: 500;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #fff;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.index section p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 40px;
+    text-align: justify;
+}
+
+.animation {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.first {
+    display: inline-block;
+    animation: firstSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+    position: relative;
+}
+
+.oh {
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.second {
+    animation: secondSpan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    font-weight: 100;
+    z-index: -1;
+    display: inline-block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes firstSpan {
+    0% {
+        transform: translateX(50%);
+    }
+
+    60% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes secondSpan {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-0%);
+    }
+}
+
+
+.footer p {
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    color: #333;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    background-color: #C6C6C6;
+    line-height: 40px;
+}
+
+.serietv section {
+    height: 89vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+
+}
+
+.serietv section h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.serietv #personajes .contenedor-cards {
+    height: 90%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.704);
+    box-shadow: #222 2px;
+    overflow-y: scroll;
+}
+
+.serietv section:nth-child(2) {
+    background-image: url(./img/599756.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    padding: 20px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.card:hover .imgBx {
+    bottom: 80px;
+
+}
+
+.card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.card:hover .details {
+    visibility: visible;
+}
+
+.card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.card .details h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
+
+.novelas section {
+    height: 89vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+
+}
+.novelas .contenedor-cards h3{
+    font-size: 24px;
+    text-decoration: underline;
+}
+.novelas #novelas {
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+
+}
+.novelas .contenedor-texto a{
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 12px;
+    border: 1px solid #333;
+    transition: .5s;
+}
+.novelas .contenedor-texto a:hover{
+    color: #fff;
+    background-color: #3d5972;
+}
+.novelas #novelas h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.novelas #novelas .contenedor-texto p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-bottom: 4%;
+}
+
+.novelas section h2 {
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.novelas section p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 22px;
+}
+
+.novelas #novelas .contenedor-cards {
+    height: 90%;
+    width: 70%;
+    background-color: rgba(51, 51, 51, 0.704);
+    box-shadow: #222 2px;
+    overflow-y: scroll;
+    margin: 20px;
+    overflow-y: scroll;
+}
+
+.novelas #novelas2 .contenedor-cards2 {
+    height: 50%;
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.novelas #novelas2 .contenedor-cards2 .card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+.novelas #novelas2 .contenedor-cards2 .card .imgBx {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: #222;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+.novelas #novelas2 .contenedor-cards2 .card:hover .imgBx {
+    bottom: 80px;
+
+}
+
+.novelas #novelas2 .contenedor-cards2 .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.novelas #novelas2 .contenedor-cards2 .card .details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+    visibility: hidden;
+}
+
+.novelas #novelas2 .contenedor-cards2 .card:hover .details {
+    visibility: visible;
+}
+
+.novelas #novelas2 .contenedor-cards2 .card .details h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+.novelas #novelas2 .contenedor-cards2 .card .details h2 span {
+    font-weight: 500;
+    font-size: 10px;
+    color: #333;
+    display: block;
+    margin-top: 5px;
+}
+
+.novelas section:nth-child(2) {
+    background-image: url(./img/637668.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.novelas .contenedor-cards .timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 80%;
+}
+
+
+.novelas .contenedor-cards .timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #fff !important;
+}
+
+.novelas .contenedor-cards .timeline ul li {
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.novelas .contenedor-cards .timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.novelas .contenedor-cards .timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.novelas .contenedor-cards .timeline ul li .content {
+    background-color: #C6C6C6;
+}
+
+.novelas p,
+.novelas h3 {
+    padding: 5px 10px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    color: #333;
+}
+
+.novelas ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #102e45;
+    color: #fff;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.novelas ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #102e45;
+    color: #fff;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.novelas section:nth-child(3) {
+    background-image: url(./img/869197.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
